@@ -836,9 +836,11 @@ Agenda files~
   The information to be shown is normally collected from all 'agendafiles',
   the files listed in the variable g:org_agenda_files.
 
-  You can change the list of agenda files like this:
+  You can change the list of agenda files, and even use globbing to include
+  multiple files in a directory like this:
 >
-    let g:org_agenda_files = ['~/org/index.org', ~/org/project.org']
+    let g:org_agenda_files = ['~/org/index.org', '~/org/project.org',
+    '~/org/agendas/*.org']
 <
 ------------------------------------------------------------------------------
 The agenda dispatcher ~
